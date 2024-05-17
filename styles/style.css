@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    padding: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 200px;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.features {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.feature {
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Additional Styling */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modules ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.modules ul li {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modules ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.assessment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.assessment .question {
+    margin: 1rem 0;
+}
+
+.assessment button {
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Login and Register Forms */
+.login, .register {
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login h1, .register h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin: 1rem 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dashboard */
+.dashboard {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h1 {
+    text-align: center;
+}
+
+.progress, .saved-resources {
+    margin: 2rem 0;
+}
+
+.progress h2, .saved-resources h2 {
+    text-align: center;
+}
+
+.progress ul, .saved-resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress ul li, .saved-resources ul li {
+    margin: 1rem 0;
+}
+
+.progress ul li span, .saved-resources ul li a {
+    font-weight: bold;
+}
+
+.saved-resources ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* E-Learning Content */
+.e-learning {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.e-learning h1 {
+    text-align: center;
+}
+
+.e-learning ul {
+    padding-left: 20px;
+}
+
+.e-learning a.cta-button {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Assessment Result */
+.assessment-result {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.assessment-result h1 {
+    text-align: center;
+}
+
+.assessment-result ul {
+    padding-left: 20px;
+}
+
+.assessment-result a.cta-button {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#improvement-notes {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#note {
+    font-weight: bold;
+    color: #D9534F;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .cta-button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .modules ul {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard, .e-learning, .assessment-result {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .modules ul {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard, .e-learning, .assessment-result {
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+}
+
+
+.assessment-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.assessment-buttons .cta-button {
+    padding: 0.5rem 1rem;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Result - Cybersecurity Toolkit</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modules.html">Modules</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="assessment-result">
+            <h1>Assessment Result</h1>
+            <p>Your score: <span id="score"></span> out of 8</p>
+            <div id="improvement-notes">
+                <h2>Areas to Improve</h2>
+                <p id="note"></p>
+            </div>
+            <h2>Materials to Improve Your Cybersecurity and Risk Management</h2>
+            <ul>
+                <li><a href="resources.html#passwords">Creating Strong Passwords</a></li>
+                <li><a href="resources.html#privacy-settings">Adjusting Privacy Settings</a></li>
+                <li><a href="resources.html#two-factor-auth">Using Two-Factor Authentication</a></li>
+                <li><a href="resources.html#phishing">Recognizing and Avoiding Phishing</a></li>
+                <li><a href="resources.html#identity-theft">Protecting Against Identity Theft</a></li>
+            </ul>
+            <a href="dashboard.html" class="cta-button">Back to Dashboard</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Toolkit. All rights reserved.</p>
+    </footer>
+    <script>
+        // Retrieve score from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        document.getElementById('score').innerText = score;
+
+        // Provide improvement notes based on score
+        const note = document.getElementById('note');
+        if (score < 4) {
+            note.innerText = "It seems you need to improve your basic cybersecurity knowledge. Please review the provided materials to enhance your understanding of strong passwords, privacy settings, and recognizing phishing attacks.";
+        } else if (score < 6) {
+            note.innerText = "Good effort! However, there are still areas where you can improve. Focus on strengthening your understanding of two-factor authentication and protecting against identity theft.";
+        } else {
+            note.innerText = "Great job! You have a good grasp of cybersecurity basics, but there's always room for improvement. Review the materials to stay updated on best practices.";
+        }
+    </script>
+</body>
+</html>
