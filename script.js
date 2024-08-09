@@ -200,3 +200,24 @@ function navigateToPage(page) {
     window.location.href = page;
 }
 
+
+
+function submitPostAssessment() {
+    const form = document.getElementById('post-assessment-form');
+    const formData = new FormData(form);
+    let score = 0;
+
+    if (formData.get('q1') === 'A') score++;
+    if (formData.get('q2') === 'C') score++;
+    if (formData.get('q3') === 'A') score++;
+    if (formData.get('q4') === 'A') score++;
+    if (formData.get('q5') === 'B') score++;
+    if (formData.get('q6') === 'A') score++;
+    if (formData.get('q7') === 'A') score++;
+    if (formData.get('q8') === 'A') score++;
+
+    window.location.href = `assessment-result.html?score=${score}`;
+}
+
+
+
